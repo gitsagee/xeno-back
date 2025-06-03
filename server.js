@@ -68,7 +68,7 @@ app.use('/api/campaigns', campaignRoutes);
 app.use('/api', sendMessage);
 app.use('/api', deliveryReceipt);
 
-mongoose.connect('mongodb://localhost:27017/xeno_db')
+mongoose.connect('mongodb+srv://utsavjhaa2003:chutiyapa@cluster4.qvro8jo.mongodb.net/?retryWrites=true&w=majority&appName=Cluster4/xeno_db')
 .then(() => console.log('MongoDB connected'))
 .catch(err => console.error('MongoDB connection error:', err));
 
